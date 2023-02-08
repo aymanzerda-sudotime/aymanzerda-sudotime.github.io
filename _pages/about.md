@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,11 +8,10 @@ redirect_from:
   - /about.html
 ---
 
->### About me
->* My name is Ayman Zerda, I am currently a Cybersecurity Engineering Student at **National School of Applied Sciences of Oujda.**.
->* I always consider myself a beginner so i love to work relentlessly to sharpen my technical skills and learn new things.
->* I enjoy problem solving and always learning using some cybersecurity plateforms such as **TryHackMe**,**Cybertalents**,**PicoCTF**.
->* I participate in **CTF** competitions.
+
+* My name is Ayman Zerda, I am currently a Cybersecurity Engineering Student at **National School of Applied Sciences of Oujda.**.
+* I always consider myself a beginner so i love to work relentlessly to sharpen my technical skills and learn new things.
+* I enjoy problem solving and always learning using some cybersecurity plateforms such as **TryHackMe**,**Cybertalents**,**PicoCTF**.
 >
 
 >
