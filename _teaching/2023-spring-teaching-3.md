@@ -1,8 +1,8 @@
 ---
 title: "File Transfer"
-collection: teaching
+collection: posts
 #type: "Undergraduate course"
-permalink: /teaching/2023-spring-teaching-3
+permalink: /posts/2023-spring-teaching-3
 #venue: "University 1, Department"
 date: 2023-02-13
 #location: "City, Country"
