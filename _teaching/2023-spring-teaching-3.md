@@ -1,10 +1,10 @@
 ---
 title: "File Transfer"
 collection: posts
-#type: "Undergraduate course"
+type: "Undergraduate course"
 permalink: /posts/2023-spring-teaching-3
-#venue: "University 1, Department"
-date: 2014-01-01
+venue: "University 1, Department"
+date: 2023-02-13
 location: "City, Country"
 ---
 
