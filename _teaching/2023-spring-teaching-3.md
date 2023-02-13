@@ -7,20 +7,19 @@ permalink: /posts/2023-spring-teaching-3
 date: 2023-02-13
 #location: "City, Country"
 ---
-
+2023-02-13
 File transfer between Linux and Windows
 
-# File Transfer
+
 
 Before talking about how to transfer a file,let's start by how you can host a server on your attacking machine.
 
 ## Using Python
 
-<font size= "5"> 
+
 ```bash
 python3 -m  http.server  PORT_NUMBER
 ```
-</font>
   
   
 
