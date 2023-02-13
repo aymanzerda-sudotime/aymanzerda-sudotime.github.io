@@ -1,14 +1,15 @@
 ---
 title: "File Transfer"
 collection: posts
-type: "Undergraduate course"
+type: "Info"
 permalink: /posts/2023-spring-teaching-3
-venue: "University 1, Department"
+venue: "Red Teaming"
 date: 2023-02-13
 location: "City, Country"
 ---
 
-File transfer between Linux and Windows
+#Description :
+File transfer between Linux and Windows.
 
 
 
