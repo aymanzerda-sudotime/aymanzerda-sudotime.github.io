@@ -4,10 +4,10 @@ collection: posts
 #type: "Undergraduate course"
 permalink: /posts/2023-spring-teaching-3
 #venue: "University 1, Department"
-date: 2023-02-13
-#location: "City, Country"
+date: 2014-01-01
+location: "City, Country"
 ---
-2023-02-13
+
 File transfer between Linux and Windows
 
 
