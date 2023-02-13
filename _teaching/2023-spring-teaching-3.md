@@ -8,6 +8,12 @@ date: 2023-02-13
 #location: "City, Country"
 ---
 
+
+
+
+
+
+
 # File Transfer
  
  Before talking about how to transfer a file,let's start by how you can host a server on your attacking machine. 
