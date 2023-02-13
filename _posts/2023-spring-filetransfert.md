@@ -2,7 +2,7 @@
 title: "Teaching experience 1"
 collection: posts
 type: "Undergraduate course"
-permalink: /posts/File-Transfert
+permalink: /posts/2023-spring-filetransfert.md
 #venue: "University 1, Department"
 date: 2023-02-13
 #location: "City, Country"
