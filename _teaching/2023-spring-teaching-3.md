@@ -16,10 +16,11 @@ Before talking about how to transfer a file,let's start by how you can host a se
 
 ## Using Python
 
+<font size= "5"> 
 ```bash
 python3 -m  http.server  PORT_NUMBER
 ```
-
+</font>
   
   
 
