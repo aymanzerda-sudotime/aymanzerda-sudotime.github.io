@@ -1,8 +1,8 @@
 ---
-title: "Teaching experience 1"
+title: "File Transfer"
 collection: posts
-type: "Undergraduate course"
-permalink: /posts/2023-spring-filetransfert.md
+#type: "Undergraduate course"
+permalink: /posts/2023-spring-teaching-3
 #venue: "University 1, Department"
 date: 2023-02-13
 #location: "City, Country"
