@@ -42,9 +42,9 @@ C:\Users\Administrator\Desktop>floss --no-static-strings C:\Users\Administrator\
 >which of the samples has the same imphash as file 3?
 
 **mal3** imphash:
-![file3](/images/impash%20of%20file%203.png)
+![file3](/images/impash-of-file-3.png)
 **mal1** imphash:
-![file1](/images/impash%20of%20file%201.png)
+![file1](/images/impash-of-file-1.png)
 
 
 >Using the ssdeep utility, what is the percentage match of the above-mentioned files?
@@ -70,7 +70,7 @@ C:\Users\Administrator\Desktop>capa  mal\4
 
 >What MBC behavior is observed against the MBC Objective 'Anti-Static Analysis'?
 
-![MBC](/images/mbc%20behavior.png)
+![MBC](/images/mbc-behavior.png)
 
 >At what address is the function that has the capability 'Check HTTP Status Code'?
 
@@ -87,4 +87,4 @@ C:\Users\Administrator\Desktop>capa -vv mal\4 > result.txt
 
 >Open the sample Desktop\mal\4 in PEstudio. Which library is blacklisted?
 
-![last task](/images/last%20task.png)
+![last task](/images/last-task.png)
