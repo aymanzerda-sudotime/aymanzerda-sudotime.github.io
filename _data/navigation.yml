@@ -9,8 +9,8 @@ main:
   - title: "Posts"
     url: /teaching/    
     
-  - title: "Writeups"
-    url: /portfolio/
+#  - title: "Writeups"
+#    url: /portfolio/
         
 #  - title: "Writeups"
 #    url: /year-archive/
