@@ -48,7 +48,7 @@ Bypassing simple WAFs :
 --random-user-agent
 ```
 ---
-Some rooms from Tryhackeme where you can practice using WPScan :
+Some rooms from Tryhackme where you can practice using WPScan :
 * [Blog](https://tryhackme.com/room/blog)
 * [ColddBox: Easy](https://tryhackme.com/room/colddboxeasy)
 * [All in One](https://tryhackme.com/room/allinonemj)
