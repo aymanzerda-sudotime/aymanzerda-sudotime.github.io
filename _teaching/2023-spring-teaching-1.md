@@ -13,7 +13,7 @@ File transfer between Linux and Windows.
 
 ---
 
-Before talking about how to transfer a file,let's start by how you can host a server on your attacking machine.
+Before talking about how to transfer a file, let's start by how you can host a server on your attacking machine.
 
 ## Using Python
 
