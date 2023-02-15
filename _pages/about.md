@@ -13,7 +13,7 @@ redirect_from:
 * I always consider myself a beginner so i love to work relentlessly to sharpen my technical skills and learn new things.
 * I enjoy problem solving and always learning using some cybersecurity plateforms such as **TryHackMe**,**Cybertalents**,**PicoCTF**.
 >
-
+<script src="https://tryhackme.com/badge/710464"></script>
 >
 > ### Tryhackme Paths:
 >* [Cyber Defense](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IMJWWN5Z9S.png)
