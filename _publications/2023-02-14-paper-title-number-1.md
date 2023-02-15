@@ -1,7 +1,7 @@
 ---
 title: "Basic Static Analysis"
 collection: publications
-permalink: /publication/2023-02-14-paper-title-number-1
+permalink: /publication/Basic-static-analysis
 excerpt: 'This is a subscriber only room from Tryhackme'
 date: 2023-02-14
 venue: '02-14'
