@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-* My name is Ayman Zerda, I am currently a Cybersecurity Engineering Student at **National School of Applied Sciences of Oujda.**.
+* My name is Ayman Zerda, I am currently a Cybersecurity Engineering Student at **National School of Applied Sciences of Oujda.**
 * I always consider myself a beginner so i love to work relentlessly to sharpen my technical skills and learn new things.
 * I enjoy problem solving and always learning using some cybersecurity plateforms such as **TryHackMe**,**Cybertalents**,**PicoCTF**.
 
@@ -44,10 +44,10 @@ redirect_from:
 >>* Burpsuite,Metasploit,Nmap,Sqlmap,gobuster,Hydra,ffuf
 >
 >>**Digital Forensics**
->>* Volatility,Audacity,foremost,NetworkMiner,Autopsy,foremost,steghide,FTK image,Openstego,johntheripper,aircrack-ng,exiftool
+>>* Volatility,Autopsy,Kape,Redline,Velociraptor,Audacity,steghide,FTK image,Openstego
 >
->>**Defense**
->>* Kape,Snort,Brim,Splunk,Wazuh,Zeek,Redline,Velociraptor
+>>**Network Security**
+>>* Snort,Brim,Zeek,NetworkMiner,Wireshark
 
 >
 
