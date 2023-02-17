@@ -2,7 +2,7 @@
 title: "File Transfer"
 collection: posts
 type: "Info"
-permalink: /posts/2023-spring-teaching-1
+permalink: /posts/file-transfer
 venue: "Red Teaming"
 date: 2023-02-13
 location: "City, Country"

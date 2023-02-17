@@ -2,7 +2,7 @@
 title: "WPScan"
 collection: posts
 type: "Info"
-permalink: /posts/2023-spring-teaching-2
+permalink: /posts/wpscan
 venue: "Red Teaming"
 date: 2023-02-13
 location: "City, Country"
