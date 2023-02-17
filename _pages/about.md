@@ -15,7 +15,7 @@ redirect_from:
 
 <script src="https://tryhackme.com/badge/710464"></script>
 >
-> ### Tryhackme Paths:
+> ### Tryhackme Paths :
 >* [Cyber Defense](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IMJWWN5Z9S.png)
 >* [SOC Level 1](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IHQOABLZ6E.png)
 >* [Jr Penetration Tester](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-9AVCHFIMUT.png)
@@ -23,7 +23,7 @@ redirect_from:
 >* [Pre Security](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IWREBY7WHP.png)
 >* [Web Fundamentals](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HRV8T0BJFH.png)
 
-> ### Certifications:
+> ### Certifications :
 >* [Security Certified Network Specialist (SCNS)](https://ondemand.icsiglobal.com/certificates/g0iq7bhrxo)
 >* [Linux Privilege Escalation for Beginners](https://academy.tcm-sec.com/courses/1154399/certificate)
 >* [Certified web application penetration tester](https://cybertalents.com/account/profile/me)
@@ -36,7 +36,7 @@ redirect_from:
 >* [AIG Shields up Cybersecurity Virtual Experience Program](https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/aig/2ZFnEGEDKTQMtEv9C_AIG_8kMDXWxYZ8oYWRap2_1657833831491_completion_certificate.pdf)
 
 
->### Skills
+>### Skills :
 >>**Programming Languages**
 >>* Python,C,bash,PHP,JS 
 >
