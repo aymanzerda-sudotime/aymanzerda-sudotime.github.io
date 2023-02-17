@@ -45,3 +45,6 @@ Finding subdomains :
 ```bash
 ffuf -u http://FUZZ.X.X.X.X -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
 ```
+---
+[ffuf reposiroty](https://github.com/ffuf/ffuf)
+[Seclists repository](https://github.com/danielmiessler/SecLists)
