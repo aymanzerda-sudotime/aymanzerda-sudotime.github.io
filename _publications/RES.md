@@ -41,7 +41,8 @@ Nmap done: 1 IP address (1 host up) scanned in 28.04 seconds
 * we can connect to redis service via redis-cli without credentials
 
 **how to install redis-tools**
-```cmd
+
+```bash
 sudo apt-get install redis-tools
 ```
 
@@ -66,7 +67,8 @@ OK
 ```
 
 **let's start a netcat listener**
-```console
+
+```bash
 # nc -lvnp 1234
 ```
 
