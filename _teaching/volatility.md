@@ -8,10 +8,10 @@ date: 2023-02-27
 location: "City, Country"
 ---
 
-![volatility](/images/volatility3.jpg)
-
 ## Description :
 Volatility is a free memory forensics tool developed and maintained by Volatility Foundation, commonly used by malware and SOC analysts within a blue team or as part of their detection and monitoring solutions.
+
+![volatility](/images/volatility3.jpg)
 
 --- 
 
