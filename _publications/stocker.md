@@ -1,7 +1,7 @@
 ---
 title: "Stocker"
 collection: publications
-permalink: /publication/RES
+permalink: /publication/stocker
 excerpt: 'This is a free machine from HackTheBox'
 date: 2023-03-02
 venue: '03-02'
@@ -148,7 +148,7 @@ dev                     [Status: 302, Size: 28, Words: 4, Lines: 1]
 
 ![nginx](/images/stocker8.png)
 
-* Now i have where the dev.stocker.htb is located, i took a guess of the file name
+* Now i know where the dev.stocker.htb is located, i took a guess of the file name
 
 ```bash
 "title":"<iframe src=file:///var/www/dev/index.js height=1000px width=800px</iframe>
