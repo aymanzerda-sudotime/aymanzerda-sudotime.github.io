@@ -162,6 +162,8 @@ dev                     [Status: 302, Size: 28, Words: 4, Lines: 1]
 
 ![ssh](/images/stocker11.png)
 
+## Privilege Escalation: 
+
 * First thing to do is to check sudo permissions
 
 ![sudo](/images/stocker12.png)
