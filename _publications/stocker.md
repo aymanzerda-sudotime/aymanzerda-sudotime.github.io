@@ -11,7 +11,7 @@ venue: '03-02'
 
 ![header](/images/stocker.png)
 
-**LINK:** [Stocker](https://app.hackthebox.com/machines/Stocker**)
+**LINK:** [Stocker](https://app.hackthebox.com/machines/Stocker)
 
 ---
 
