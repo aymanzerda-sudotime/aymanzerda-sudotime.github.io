@@ -1,5 +1,5 @@
 ---
-title: "ffuf"
+title: "Backdoors"
 collection: posts
 type: "Info"
 permalink: /posts/backdoors
