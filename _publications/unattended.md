@@ -1,5 +1,5 @@
 ---
-title: "unattended"
+title: "Unattended"
 collection: publications
 permalink: /publication/unattended
 excerpt: 'This is a free room from Tryhackme'
