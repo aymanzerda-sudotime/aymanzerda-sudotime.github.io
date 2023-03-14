@@ -8,11 +8,9 @@ venue: '13-03'
 #paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-
 ![header](/images/unattended.png)
 
 **Link:** [Unattended](https://tryhackme.com/room/unattended)
-
 ## Description : 
 
 * Investigate a user activity between 12:05 PM to 12:45 PM on the 19th of November 2022.
@@ -53,11 +51,10 @@ OR
 
 * Select 'C' file :
 
-
-
 ![unattended2](/images/unattended2.png)
 
-* Now you can check the web downloads 
+* Now you can check the web downloads
+
 ![unattended3](/images/unattended3.png)
 
 >Thanks to the previously downloaded file, a PNG file was opened. When was this file opened? (YYYY-MM-DD HH:MM:SS)
