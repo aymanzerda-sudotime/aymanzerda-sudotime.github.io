@@ -25,7 +25,9 @@ redirect_from:
 
 > ### Certifications :
 >* [Security Certified Network Specialist (SCNS)](https://ondemand.icsiglobal.com/certificates/g0iq7bhrxo)
->* [Linux Privilege Escalation for Beginners](https://academy.tcm-sec.com/courses/1154399/certificate)
+>* [Practical Ethical Hacking](https://github.com/aymanzerda-sudotime/TCM/blob/main/certificate-of-completion-for-practical-ethical-hacking-the-complete-course.pdf)
+>* [Windows Privilege Escalation for Beginners](https://github.com/aymanzerda-sudotime/TCM/blob/main/certificate-of-completion-for-windows-privilege-escalation-for-beginners.pdf)
+>* [Linux Privilege Escalation for Beginners](https://github.com/aymanzerda-sudotime/TCM/blob/main/certificate-of-completion-for-linux-privilege-escalation-for-beginners.pdf)
 >* [Certified web application penetration tester](https://cybertalents.com/account/profile/me)
 >* [Certified Digital Forensics Examiner](https://cybertalents.com/account/profile/me)
 >* [PHP](https://www.sololearn.com/Certificate/CT-DXMM5XQ0/jpg)
