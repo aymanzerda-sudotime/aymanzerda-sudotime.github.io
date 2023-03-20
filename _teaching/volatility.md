@@ -1,5 +1,5 @@
 ---
-title: "Volatility"
+title: "Volatility3"
 collection: posts
 type: "Info"
 permalink: /posts/volatility
@@ -36,9 +36,18 @@ python3 vol.py -f 'dump.vmem' windows.pslist
 ```
 
 * Some malware, typically rootkits in an attempt to hide their processes, unlike itself from the list but we can find them :
-
 ```bash
 python3 vol.py -f 'dump.vmem' windows.psscan
+```
+
+*Display process environment variables:
+```bash
+python3 vol.py -f 'dump.vmem' windows.envars --pid XXXX
+```
+
+* Dump the memory of a process:
+```bash
+python3 vol.py -f 'dump.vmem' -o /PATH/TO/OUTPUT windows.memmap.Memmap --pid XXXX --dump
 ```
 
 * Listing all processes based on their parent process id :
