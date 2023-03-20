@@ -40,7 +40,7 @@ python3 vol.py -f 'dump.vmem' windows.pslist
 python3 vol.py -f 'dump.vmem' windows.psscan
 ```
 
-*Display process environment variables:
+* Display process environment variables:
 ```bash
 python3 vol.py -f 'dump.vmem' windows.envars --pid XXXX
 ```
