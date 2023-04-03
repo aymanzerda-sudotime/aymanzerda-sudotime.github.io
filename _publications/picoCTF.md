@@ -192,3 +192,85 @@ venue: '03-22'
 bash -v [filename]
 ```
 ![specialer4](/images/specialer4.png)
+
+# Forensics
+
+## Hideme : 100 points
+
+![challenge](/images/hideme1.png)
+
+* The file is a PNG image
+
+![hideme2](/images/hideme2.png)
+
+* The *binwalk* tool identified a zip archive that contains a folder called *secret*
+
+![hideme3](/images/hideme3.png)
+
+* Let's display the PNG image 
+
+![hideme](/images/hideme5.png)
+
+
+## PcapPoisoning : 100 points 
+
+![challenge](/images/pcappoisoning1.png)
+
+* Open *trace.pcap* with *wireshark* then *ctrl+F* and search for **pico**
+
+![pcappoisoning2](/images/pcappoisoning2.png)
+
+
+## who is it : 100 points
+
+![challenge](/images/whoisit1.png)
+
+* You can use *Thunderbird* to open the email 
+
+![whoisit2](/images/whoisit2.png)
+
+* If you check the source code, you can see the designated permitted sender ip address
+![whoisit3](/images/whoisit3.png)
+
+* A quick lookup for the ip address and you will find the name of the person
+
+![whoisit4](/images/whoisit4.png)
+![whoisit5](/images/whoisit5.png)
+
+## FindAndOpen : 200 points
+
+![challenge](/images/findandopen1.png)
+
+* Open the *dump.pcap* with *Wireshark*, the packet *#48* has a unique size
+
+![findandopen2](/images/findandopen2.png)
+
+* Obviously it's base64 encoding, so let's decode it
+
+![findandopen3](/images/findandopen3.png)
+
+* Well that's the first part of the flag, since we have a zip file protected with a password let's try to unzip the file using the first part of the flag as the password
+
+![findandopen4](/images/findandopen4.png)
+
+
+## MSB : 200 points
+
+![challenge](/images/msb1.png)
+
+* From the description you can tell that maybe the data is hidden in the most significant bit of the RGB pixels values
+
+* I found this python code that can extract data from the image 
+https://github.com/Pulho/sigBits
+
+
+```bash
+python3 sigBits.py -t=msb Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png 
+```
+
+![msb3](/images/msb3.png)
+
+* This will generate a file called *outputSB.txt*, open the file with a text editor and search for *pico*
+
+![msb4](/images/msb4.png)
+
