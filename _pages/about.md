@@ -11,7 +11,7 @@ redirect_from:
 
 * My name is Ayman Zerda, I am currently a Cybersecurity Engineering Student at **National School of Applied Sciences of Oujda.**
 * I always consider myself a beginner so i love to work relentlessly to sharpen my technical skills and learn new things.
-* I enjoy problem solving and always learning using some cybersecurity plateforms such as **TryHackMe**,**Cybertalents**,**PicoCTF**.
+* I enjoy problem solving and always learning using some cybersecurity plateforms such as **TryHackMe**,**HackTheBox**,**Cybertalents**,**PicoCTF**.
 
 <script src="https://tryhackme.com/badge/710464"></script>
 >
