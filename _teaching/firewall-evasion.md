@@ -105,5 +105,5 @@ nmap -sS --badsum <target>
 
 
 ### References : 
-* https://nmap.org/book/man-bypass-firewalls-ids.html
-* https://tryhackme.com/room/redteamfirewalls
+* [nmap](https://nmap.org/book/man-bypass-firewalls-ids.html)
+* [THM](https://tryhackme.com/room/redteamfirewalls)
