@@ -136,10 +136,9 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 
 * Enter the password.
 
-![opacity15](/images/opacity15.png)
-
 ![opacity16](/images/opacity16.png)
 
+![opacity15](/images/opacity15.png)
 
 * Let's login via ssh using this credentials and get the user flag.
 
