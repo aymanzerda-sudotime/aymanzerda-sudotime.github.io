@@ -2,7 +2,7 @@
 title: "Introduction to windows forensics"
 collection: posts
 type: "Info"
-permalink: /posts/introduction-to-windows_forensics
+permalink: /posts/introduction-to-windows-forensics
 venue: "Blue Teaming"
 date: 2023-04/24
 location: "City, Country"
