@@ -44,20 +44,15 @@ C:\Windows\system32\config
 
 * Some important artifacts that you should check :
 
-> What files were last accessed ?
+> **What files were last accessed ?**
 
 ```bash
 HCKU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer 
 ```
-├── \ComDlg32
-│   ├── LastVisitedPidIMRU
-│   ├── OpenSavePidIMRU
-├── \RecentDocs
-├── \RunMRU
-├── \TypedPaths
-├── \UserAssist
+![windowsforensics1](/images/windowsforensics1.png)
 
-> What programs were specified to start upon loggin ?
+
+> **What programs were specified to start upon loggin ?**
 
 ```bash
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
@@ -67,13 +62,70 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce
 ```
 
-> Find a file that it once existed on the system :
+> **Find a file that once existed on the system :**
 
 ```bash
 HKCU\SOFTWARE\Microsoft\Windows\Shell
 ```
-├── \BagMRU
-├── \Bags
+![Windowsforensics2](/images/windowsforensics2.png)
+
+
+> **What USB devices were plugged into a system?**
+
+```bash
+
+HKLM\SYSTSEM\CurrentControlSet\Enum\USBSTOR  --> Class ID / Serial number
+HKLM\SYSTSEM\CurrentControlSet\Enum\USB  --> VID/PID
+
+HKLM\SOFTWARE\Microsoft\Windows Portable Devices\Devices --> find serial number and then look for FriendlyName to obtain the Volume name of the USB device
+
+HKLM\SYSTEM\MountedDevices --> find serial number to obtain the drive letter and Volume GUID of the usb device
+
+NTUSER.DAT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Mountpoints2 --> USB times like First time device is connected, Last time device is connected, Removal time
+```
+
+> **General information about the device:**
+
+```bash
+HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+HKLM\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName
+
+
+HKLM\SYSTEM\CurrentControlSet\services\LanmanServer\Shares --> Display all open shares on a system
+
+
+HKLM\SYSTEM\CurrentControlSet\Control\FileSystem --> look for NtfsDisableLastAccessUpdate, which is set to 0x1 by default, which means that access time stamps are turned off by default
+
+HKLM\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces --> Display interfaces and their associated IP address configuration (note the interfaces GUID)
+```
+
+> **Network Information:**
+
+```bash
+
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList
+```
+
+![windowsforensics3](/images/windowsforensics3.png)
+
+
+> **Link Files:**
+
+```bash
+C:\username\AppData\Roaming\Microsoft\Windows\Recent
+C:\username\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations
+C:\username\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations
+```
+
+> **Prefetcher:**
+
+```bash
+
+c:\Windows\Prefetch --> Prefetch files are an important type of evidence, which provide detailed information about the programs that were run on a computer.
+
+```
+
+
 
 
    
