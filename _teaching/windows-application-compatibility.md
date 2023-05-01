@@ -13,7 +13,7 @@ Let's continue our series of posts on Windows forensics, today we're going to ta
 
 ---
 
-* Amcache.hve which is a registry hive, it stores more information and metadata about executed programs including sha-1 hash of the binary that was executed. 
+* *Amcache.hve* which is a registry hive, it stores more information and metadata about executed programs including sha-1 hash of the binary that was executed. 
 
 ```bash
 c:\Windows\AppCompat\Programs\
@@ -57,5 +57,6 @@ AppCompatCacheParser.exe --csv .\ -t  -f  .\SYSTEM
 
 ![AppCompatCacheParser](/images/appcompatcacheparser.png)
 
+----
 
-
+* [Check the previous post](https://aymanzerda-sudotime.github.io/posts/introduction-to-windows-forensics)
