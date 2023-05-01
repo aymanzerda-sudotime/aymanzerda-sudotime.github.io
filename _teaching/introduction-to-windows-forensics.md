@@ -9,7 +9,6 @@ location: "City, Country"
 ---
 
 ## Description : 
-
 I am excited to announce that I will be starting a new series of posts on Windows forensics. In this series, I will be diving into the world of digital forensics and exploring the various tools and techniques used to investigate and analyze Windows systems.
 
 My goal is to publish a new post in this series every week, so be sure to check back regularly for new content.
