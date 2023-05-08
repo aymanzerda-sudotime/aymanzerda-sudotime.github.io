@@ -3,8 +3,8 @@ title: "Capture - TryHackMe"
 collection: publications
 permalink: /publication/capture
 excerpt: 'This is a free machine from TryHackMe'
-date: 2023-04-10
-venue: '04-10'
+date: 2023-05-08
+venue: '05-08'
 #paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
