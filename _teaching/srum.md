@@ -10,7 +10,7 @@ location: "City, Country"
 
 ## Description :
 
-Today we're going to see how wen can retrive a wealth of information about all the activities that occur on your machine.
+Today we're going to see how wen can retrieve a wealth of information about all the activities that occur on your machine.
 
 ---
 
