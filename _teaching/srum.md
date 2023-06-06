@@ -1,5 +1,5 @@
 ---
-title: "Windows forensics 2 : System Resource Utilization Monitor"
+title: "Windows forensics 3 : System Resource Utilization Monitor"
 collection: posts
 type: "Info"
 permalink: /posts/srum
