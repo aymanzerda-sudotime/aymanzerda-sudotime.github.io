@@ -75,9 +75,9 @@ hydra -L users.txt -P passwords.txt X.X.X.X -s 8080 http-post-form "/login:usern
 
 # Flag 2: 
 
-* A verification code is required to enter a 2FA code, we can brute force it using **ffuf**
+* A verification code is required to enter a 2FA code, we can brute force it using **ffuf**.
 * Looking at the source code, you can be sure that only four chars are needed.
-* We have a lot of options to creat a wordlist that contains 4 digits numbers from 0000 to 9999.
+* We have a lot of options to create a wordlist that contains 4 digits numbers from 0000 to 9999.
 
 ```console
 crunch 4 4 -t %%%% -o numbers.txt
@@ -90,7 +90,7 @@ crunch 4 4 -t %%%% -o numbers.txt
 for i in {0000..9999}; do echo "$i"; done > numbers.txt
 ```
 
-* Now it's time to brute force the 2FA code using **ffuf**
+* Now it's time to brute force the 2FA code using **ffuf**.
 
 ![intranet4](/images/intranet4.png)
 
@@ -121,13 +121,13 @@ for i in {0000..9999}; do echo "$i"; done > numbers.txt
 
 # FLAG 4 :
 
-* In order to access the admin panel we have to become an admin
+* In order to access the admin panel we have to become an admin.
 * By reading the first line of the **app.py**, you can see how the app generates the jwt session key, the key contains **secret_key_** concatenated with a random number between 100000 and 999999.
 ![intranet10](/images/intranet10.png)
 
-* Now we can find the session key and generate session key for other users using **Flask-unsgin**
+* Now we can find the session key and generate session key for other users using **Flask-unsgin**.
 
-> Download [Flask-insign](https://github.com/Paradoxis/Flask-Unsign) 
+> Download [Flask-unsign](https://github.com/Paradoxis/Flask-Unsign) 
 
 * But first we need to create a wordlist contains all the possible session key using this command:
 
