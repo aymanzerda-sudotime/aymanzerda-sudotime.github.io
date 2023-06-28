@@ -1,5 +1,5 @@
 ---
-title: "Intranet TryHackMe"
+title: "Devie TryHackMe"
 collection: publications
 permalink: /publication/devie
 excerpt: 'This is a subscriber only room from TryHackMe'
