@@ -3,7 +3,7 @@ title: "Intranet TryHackMe"
 collection: publications
 permalink: /publication/devie
 excerpt: 'This is a subscriber only room from TryHackMe'
-date: 2023-06-228
+date: 2023-06-28
 venue: '06-28'
 #paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
