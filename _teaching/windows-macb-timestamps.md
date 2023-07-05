@@ -2,7 +2,7 @@
 title: "Windows forensics 4 : windows MACB timestamps"
 collection: posts
 type: "Info"
-permalink: /posts/macb
+permalink: /posts/windows-macb-timestamps
 venue: "Blue Teaming"
 date: 2023-07-04
 location: "City, Country"
