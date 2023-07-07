@@ -101,7 +101,7 @@ nc -lvnp 4444
 
 ![catpictures9](/images/cat_pictures9.png)
 
-* I Downloaded this exploit [exploit](https://github.com/blasty/CVE-2021-3156) and uploaded it to the target machine.
+* I downloaded this [exploit](https://github.com/blasty/CVE-2021-3156) and uploaded it to the target machine.
 
 ```bash
 make
