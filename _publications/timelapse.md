@@ -53,19 +53,19 @@ the scan reveals 17 open ports :
 
 > these open ports suggest that we're dealing with a domain controller.
 
-* Let's check the ``smb`` shares 
+* Let's check the ``smb`` shares.
 
 ![timelapse1](/images/timelapse1.png)
 
-* There is an only open share named *shares* 
+* There is an only open share named *shares* .
 
 ![timelapse2](/images/timelapse2.png)
 
-* there is a zip file for ``winrm``, let's download it to our local machine and unzip it
+* there is a zip file for ``winrm``, let's download it to our local machine and unzip it.
 
 ![timelapse4](/images/timelapse4.png)
 
-* Unfortunately the zip file is password protected, let's use ``zip2john`` to generate a hash that can be brute forced with ``john the ripped``
+* Unfortunately the zip file is password protected, let's use ``zip2john`` to generate a hash that can be brute forced with ``john the ripper``.
 
 ```bash
 # zip2john winrm_backup.zip > file.john
@@ -96,7 +96,7 @@ ver 2.0 efh 5455 efh 7875 winrm_backup.zip/legacyy_dev_auth.pfx PKZIP Encr: TS_c
 # pfx2john legacyy_dev_auth.pfx > pfx.john
 ```
 
-*let's crack it :
+* let's crack it :
 
 ![timelapse8](/images/timelapse8.png)
 
