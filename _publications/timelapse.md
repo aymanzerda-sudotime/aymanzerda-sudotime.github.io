@@ -2,7 +2,7 @@
 title: "Timelapse"
 collection: publications
 permalink: /publication/timelapse
-excerpt: 'This is a retir machine from HackTheBox'
+excerpt: 'This is a retired machine from HackTheBox'
 date: 2023-08-01
 venue: '08-01'
 #paperurl: 'http://academicpages.github.io/files/paper1.pdf'

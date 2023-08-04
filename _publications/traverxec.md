@@ -173,6 +173,9 @@ chmod 400 id_rsa
 
 ![traverexec10](/images/traverexec10.png)
 
+* Now it's time to get the root flag
+
+![traverexec11](/images/traverexec11.png)
 
 
 
