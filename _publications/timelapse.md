@@ -107,3 +107,46 @@ ver 2.0 efh 5455 efh 7875 winrm_backup.zip/legacyy_dev_auth.pfx PKZIP Encr: TS_c
 ![timelapse9](/images/timelapse9.png)
 
 * Get the user flag. 
+
+# ROOT Flag : 
+
+* Let's check the powershell history file .
+
+```bash
+type $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+```
+
+![timelapse10](/images/timelapse10.png)
+
+* The file contains commands run by the user ``legacyy``, one of the commands was the creds for the user ``svc_deploy``.
+
+* Reconnecting with ``svc_deploy`` creds.
+
+```bash
+evil-winrm -i 10.10.11.152 -u svc_deploy -p 'redacted' -S
+```
+
+* While i was enumerating, i found that the ``svc_deploy`` user is part of an interesting group.
+
+![timelapse11](/images/timelapse11.png)
+
+> LAPS manages the local admin password, so since we are part of the LAPS_Readers we can read the administrator password.
+
+```bash
+Get-ADComputer -identity DC01 -properties *
+```
+
+![timelapse12](/images/timelapse12.png)
+
+* Now it's time to reconnect but this time as the ``administrator``.
+
+* The root.txt file was not in the desktop folder.
+
+![timelapse13](/images/timelapse13.png)
+
+* I found another user called ``TRX``, if you check his ``Desktop`` folder you will find the root flag.
+
+![timelapse14](/images/timelapse14.png)
+
+
+
