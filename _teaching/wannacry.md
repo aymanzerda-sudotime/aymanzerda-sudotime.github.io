@@ -63,6 +63,57 @@ This version of wannacry contains the following elemnts :
 | CryptEncrypt,CryptDecrypt,CryptGenKey…                         | cryptography calls                                                |
 
 
+* indication that this binary contains three other executables
+
+![executables](/images/indicators.png)
+
+* There are a few cryptographic APIs that are probably used in the encryption routine
+
+![crypto-api](/images/crypto-api.png)
+
+* We know now that the socket api is used for close,receive,send (different types of socket API calls) so maybe the binary may be opening ports and maybe attempting remote connections to different ports.
+
+![network-api](/images/network.png)
+
+* There is some kind of service creation from this binary and perhaps that's a persistence mechanism 
+
+![services](/images/services.png)
+
+* There is an executable inside the ``.rsrc`` section of the file 
+
+![packed-executable](/images/embedded-executable.png)
+
+* Capa was able to find the following indicators 
+
+![capa1](/images/capa1.png)
+
+![capa2](/images/capa2.png)
+
+![capa3](/images/capa3.png)
+
+
+# Basic dynamic analysis : 
+
+* Wannacry will attempt to contact the URL that we found earlier, if it does make a connection to this weird URL it does not trigger the payload.
+
+* After we have the tcp handshake, we have an http packet that makes a full request to the weird URL.
+
+![weird url](/images/weird-url.png)
+
+* After we stop ``InetSim``, run the following command on Flare-VM :
+```bash
+ipconfig /flushdns
+```
+
+* Now when we run the executable the payload is triggered.
+
+* Let's use ``TCPView`` to see what happens.
+
+![TCPView](/images/smb_connection.png)
+
+* We see a bunch of traffic going out to port 445 to a bunch of remote addresses which means there is no real address connectivity presence to be able to make a connection, so we see how wannacry is trying to propogate itself through network , so this is a ransomware binary but it also has worm capabilities and the way is tring to propogate is through the eternalblue exploit which is an exploit against windows smb of certain versions.
+
+
 
 
 
