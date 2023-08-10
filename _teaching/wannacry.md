@@ -111,7 +111,7 @@ ipconfig /flushdns
 
 ![TCPView](/images/smb_connection.png)
 
-* We see a bunch of traffic going out to port 445 to a bunch of remote addresses which means there is no real address connectivity presence to be able to make a connection, so we see how wannacry is trying to propogate itself through network , so this is a ransomware binary but it also has worm capabilities and the way is tring to propogate is through the eternalblue exploit which is an exploit against windows smb of certain versions.
+* We see a bunch of traffic going out to port 445 to a bunch of remote addresses which means there is no real address connectivity presence to be able to make a connection, so we see how wannacry is trying to propogate itself through network , so this is a ransomware binary but it also has worm capabilities and the way is trying to propogate through the ``eternalblue`` exploit which is an exploit against windows smb of certain versions.
 
 
 * Let's take a look at the processes created by the malware while executing using ``Procmon``, but first let's apply this filter 
@@ -121,7 +121,7 @@ ipconfig /flushdns
 ![tasksche](/images/tasksche-executable.png)
 
  * The malware creates a bunch of processes, the interesting one is this ``tasksche.exe``.
- * We can see clearly that the ransomware is unpacking ``tasksche.exe`` with the process tree.
+ * With the process tree, we can see clearly that the ransomware is unpacking ``tasksche.exe``.
 
  ![process-tree](/images/process-tree.png)
 
@@ -129,7 +129,7 @@ ipconfig /flushdns
 
 ![created directory](/images/directory-creation.png)
 
- * As you can see, the ``tasksche.exe`` is being created again inside a directory with strange name, let's browse to this directory 
+ * As you can see, the ``tasksche.exe`` is being created again inside a directory with a strange name, let's browse to this directory.
 
  ![hidden directory](/images/hidden-directory.png)
 
@@ -157,9 +157,12 @@ ipconfig /flushdns
  * ``InternetOpenUrlA`` tests the connection to www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com.
  * If it succeeds in reaching the destination, the program calls ``InternetCloseHandle`` to terminate the Internet connection and exits without malicious action.
 
- 1- ``edi's`` value is compared with its own value, and depending on the result, the program decides which route to take.
- 2- If the connection to the url is unsuccessful, we call a function that installs itself as a service, opens up and unpack the rest of the resources and it will kick of the encryption routine.
- 3- Otherwise, the program will not run.
+
+![cutter-flow](/images/cutter-flow.png)
+
+ 1. ``edi's`` value is compared with its own value, and depending on the result, the program decides which route to take.
+ 2. If the connection to the url is unsuccessful, we call a function that installs itself as a service, opens up and unpack the rest of the resources and it will kick of the encryption routine.
+ 3. Otherwise, the program will not run.
 
 * If the program continue to execute, here are the instruction for persistence and the encryption routine.
 
