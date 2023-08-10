@@ -30,7 +30,7 @@ Wannacry is a ransomware that targets Windows operating systems. It encrypts com
 
 # Malware composition : 
 
-This version of wannacry contains the following elemnts : 
+This version of wannacry contains the following elements : 
 
 * Ransomware.wannacry.exe which is the initial executable.
 * Unpacked executables after the initial execution
@@ -112,6 +112,60 @@ ipconfig /flushdns
 ![TCPView](/images/smb_connection.png)
 
 * We see a bunch of traffic going out to port 445 to a bunch of remote addresses which means there is no real address connectivity presence to be able to make a connection, so we see how wannacry is trying to propogate itself through network , so this is a ransomware binary but it also has worm capabilities and the way is tring to propogate is through the eternalblue exploit which is an exploit against windows smb of certain versions.
+
+
+* Let's take a look at the processes created by the malware while executing using ``Procmon``, but first let's apply this filter 
+
+![filter](/images/createfile-filter.png)
+
+![tasksche](/images/tasksche-executable.png)
+
+ * The malware creates a bunch of processes, the interesting one is this ``tasksche.exe``.
+ * We can see clearly that the ransomware is unpacking ``tasksche.exe`` with the process tree.
+
+ ![process-tree](/images/process-tree.png)
+
+* The next step is to take a note of the created process's PID and filtering it out as the Parent PID 
+
+![created directory](/images/directory-creation.png)
+
+ * As you can see, the ``tasksche.exe`` is being created again inside a directory with strange name, let's browse to this directory 
+
+ ![hidden directory](/images/hidden-directory.png)
+
+ * After visiting this directory, it appears like this is a staging area for wannacry execution and unpacking all of its packed resources.
+
+* If we open **task manager** and check the services tab, we will find a service with the same name as the directory that was created in ``ProgramData``
+
+![task-manager](/images/task-manager.png)
+
+ * This is a persistence mechanism so if you restart your computer wannacry kicks back and will re-encrypt anything thats been added to the host.
+
+# Advanced static analysis :
+
+* We will use ``Cutter`` to conduct the advanced static analysis, which will confirm what we found in the basic dynamic analysis.
+
+* We see the weird url loaded to ``esi``at the beginning of the program.
+
+![esi](/images/url-moved-to-esi.png)
+
+* We have 3 API calls 
+
+![api calls](/images/api_calls.png)
+
+ * ``InternetOpenA`` prepares the application for future calls.
+ * ``InternetOpenUrlA`` tests the connection to www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com.
+ * If it succeeds in reaching the destination, the program calls ``InternetCloseHandle`` to terminate the Internet connection and exits without malicious action.
+
+ 1- ``edi's`` value is compared with its own value, and depending on the result, the program decides which route to take.
+ 2- If the connection to the url is unsuccessful, we call a function that installs itself as a service, opens up and unpack the rest of the resources and it will kick of the encryption routine.
+ 3- Otherwise, the program will not run.
+
+* If the program continue to execute, here are the instruction for persistence and the encryption routine.
+
+![instruction](/images/malware-instruction.png)
+
+
 
 
 
