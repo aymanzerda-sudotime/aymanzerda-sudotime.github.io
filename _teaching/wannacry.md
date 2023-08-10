@@ -9,9 +9,15 @@ location: "City, Country"
 ---
 
 ## Description : 
-Today i will make a triage report for the infamous ``Wannacry`` ransomware.
+Today, i will perform a static and dynamic analysis of the infamous ``Wannacry`` ransomware.
 
-[Wannacry sample](https://github.com/HuskyHacks/PMAT-labs/tree/main/labs/4-1.Bossfight-wannacry.exe)
+You can download the sample from [here](https://github.com/HuskyHacks/PMAT-labs/tree/main/labs/4-1.Bossfight-wannacry.exe)
+
+It’s critical to have a proper lab environment, you have to create a secure environment in which you can analyze malicious files in the safest way.
+
+For this analysis, i will be using ``FLARE-VM`` which is an excellent Windows-based security distribution for malware analysis that comes with great tools. I will also use ``Remnux`` because it provides ``Inetsim`` for simulating common internet services. 
+
+You can find how to setup this Lab [here](https://justaresearchguy.com/malware-analysis-lab-setup/)
 ---
 
 # Executive Summary : 
@@ -167,6 +173,82 @@ ipconfig /flushdns
 * If the program continue to execute, here are the instruction for persistence and the encryption routine.
 
 ![instruction](/images/malware-instruction.png)
+
+
+# Advanced dyanmic analysis : 
+
+* Using ``x32dbg``, we can see that a breakpoint was set at ``0x00408140``, which corresponds to the main section where the URL is checked.
+
+![breakpoint](/images/first-breakpoint.png)
+
+* From this point we can follow the execution of the program and inspect its behavior.
+
+![flow](/images/jump_not_taken.png)
+
+ * ZF is already set to 1.
+ * ``eax`` set to 0 since no response is received from the weird URL (inaccessible).
+ * ``eax`` is copied to ``edi`` so now it is set to 0.
+ * the test instruction performs a bitwise AND on ``edi`` against itself, it return 0.
+ * ZF still set to 1 since test instruction returns 0.
+ * ``JNE`` will not be taken because ZF is not set to 0, that's why the program will go through the malicious routine.
+
+* During debugging, changing th ZF to 0 would allow the malware to execute its malicious routine even if the URL is reachable(which will trick the malware into believing that connection to the weird URL was not successful), same goes for modifying the JNE instruction to JE.
+
+
+# Indicator of compromise : 
+
+## Network indicators : 
+
+* Sending a ``GET`` request to the weird URL.
+
+![Get](/images/get-request.png)
+
+* Connections to multiple IP Addresses on port 445.
+
+![smb](/images/smb_connection.png)
+
+
+## Host-based indicators : 
+
+* New processes : 
+
+![new processes](/images/new_processes.png)
+
+* Creation of a new hidden folder with a random name.
+
+![hidden directory](/images/hidden-directory.png)
+
+* New service : 
+
+![servie](/images/services.png)
+
+
+## Rules and signatures : 
+
+* Yara rules : 
+
+```bash
+rule Wannacry  {
+    meta : 
+        Last_update = "2023-10-08"
+        Author = "Hammertime"
+        Description = "Detecting wannacry"
+    
+    strings : 
+        $string1 = "www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com" fullword
+        $string2 = "icacls . /grant Everyone:F /T /C /Q" fullword
+        $string3 = "attrib +h" fullword
+        $string4 = "cmd.exe /c "%s"" fullword
+        $string5 = "tasksche.exe" fullword
+        $string6 = "C:\%s\qeriuwjhrf" fullword
+        $string7 = "\\\\172.16.99.5\\IPC$" fullword
+        $string8 = "\\\\192.168.56.20\\IPC$" fullword   
+    condition : 
+        any of ($string*)
+```
+
+
+
 
 
 
