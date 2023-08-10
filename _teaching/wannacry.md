@@ -18,6 +18,7 @@ It’s critical to have a proper lab environment, you have to create a secure en
 For this analysis, i will be using ``FLARE-VM`` which is an excellent Windows-based security distribution for malware analysis that comes with great tools. I will also use ``Remnux`` because it provides ``Inetsim`` for simulating common internet services. 
 
 You can find how to setup this Lab [here](https://justaresearchguy.com/malware-analysis-lab-setup/)
+
 ---
 
 # Executive Summary : 
