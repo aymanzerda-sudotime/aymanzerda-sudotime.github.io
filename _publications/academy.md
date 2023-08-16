@@ -21,7 +21,7 @@ venue: '08-16'
 
 ```bash
 nmap -A -p- 10.10.10.165
-Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-03 06:19 EDT
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-16 06:19 EDT
 Nmap scan report for 10.10.10.165
 Host is up (0.19s latency).
 Not shown: 65533 filtered tcp ports (no-response)
@@ -49,7 +49,7 @@ echo "10.10.10.215 academy.htb" >> /etc/hosts
 ```
 ![academy1](/images/academy1.png)
 
-* The webiste has a ``login`` and ``register`` page, after registring the website redirects us to a welcome page then a login page.
+* The webiste has a ``login`` and ``register`` page, after registering the website redirects us to a welcome page then a login page.
 
 * I spent some times looking for potential features that we can exploit but unfortunately there wasn't.
 
