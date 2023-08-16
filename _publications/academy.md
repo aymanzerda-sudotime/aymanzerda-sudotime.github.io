@@ -51,7 +51,7 @@ echo "10.10.10.215 academy.htb" >> /etc/hosts
 
 * The webiste has a ``login`` and ``register`` page, after registering the website redirects us to a welcome page then a login page.
 
-* I spent some times looking for potential features that we can exploit but unfortunately there wasn't.
+* I spent some times looking for potential features that can be exploited but unfortunately there wasn't.
 
 * Let's see if we can find any hidden directories or files.
 
@@ -81,7 +81,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /register.php         (Status: 200) [Size: 3003]
 /admin.php            (Status: 200) [Size: 2633]
 ```
-* the interesting page is ``admin.php``, browsing to it reveals a new login page, i tried to login with the registred user but it didnt work.
+* the interesting page is ``admin.php``, browsing to it reveals a new login page, i tried to login with the registered user but it didnt work.
 
 * Back to the registration page, let's try to create a new user but this time we will intercept the request with ``burpsuite``.
 
