@@ -140,6 +140,41 @@ nc -lvnp 4444
 
 ![academy11](/images/academy11.png)
 
+# Root Flag : 
+
+* ``cry0l1t3`` is part of a group named ``adm`` 
+
+![academy12](/images/academy12.png)
+
+* A quick research reveals that the ``adm`` groups can read many log files.
+
+![academy13](/images/academy13.png)
+
+* Instead of checking all of those log files which is quite challenging, i found this tool called ``aureport`` that produces summary reports of the audit system logs, it has an option to check the logs for the terminal sessions.
+
+![academy14](/images/academy14.png)
+
+* The ``TTY`` report reveals the password for the user ``mrb3n``.
+
+![academy15](/images/academy15.png)
+
+* Let's check the ``sudo`` permissions for the user ``mrb3n``.
+
+![academy16](/images/academy16.png)
+
+* the user ``mrb3n`` can run ``composer`` as root. time to pay [GTFObins](https://gtfobins.github.io/gtfobins/composer/#sudo) a visit.
+
+![academy17](/images/academy17.png)
+
+* After inputting these commands, i got a shell as ``root``
+
+![academy18](/images/academy18.png)
+
+
+
+
+
+
 
 
 
