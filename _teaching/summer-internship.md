@@ -2,8 +2,8 @@
 title: "My Summer Internship"
 collection: posts
 type: "Info"
-permalink: /posts/internship
-venue: "Blue Teaming"
+permalink: /posts/summer-internship
+venue: "Malware Analysis"
 date: 2023-04-09
 location: "City, Country"
 ---
