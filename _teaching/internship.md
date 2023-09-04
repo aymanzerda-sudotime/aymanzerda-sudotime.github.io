@@ -2,7 +2,7 @@
 title: "My Summer Internship"
 collection: posts
 type: "Info"
-permalink: /posts/internsip
+permalink: /posts/internship
 venue: "Malware Analysis"
 date: 2023-04-09
 location: "City, Country"
