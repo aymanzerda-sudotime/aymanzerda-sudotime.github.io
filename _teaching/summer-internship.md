@@ -4,12 +4,11 @@ collection: posts
 type: "Info"
 permalink: /posts/summer-internship
 venue: "Malware Analysis"
-date: 2023-04-09
+date: 2023-09-04
 location: "City, Country"
 ---
 
 ## Description : 
-
 During my internship at Techso Group, I had the opportunity to delve into the intriguing world of malware analysis. Over the course of the summer, I gained a wealth of knowledge and hands-on experience that shed light on the intricacies of this ever-evolving field. In this blog post,  I'll share the key takeaways and insights that shaped my understanding of malware analysis.
 
 1-  Malware Analysis - A Tricky Endeavor : 
