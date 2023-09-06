@@ -176,7 +176,7 @@ To demonstrate what i learned, I chose the infamous ransomware WannaCry as my su
 
 ---- 
 
-Here's a list of the resources I found particularly useful:
+Here's a list of the resources I found particularly useful :
 
 [Practical Malware Analysis & Triage by TCM Security](https://academy.tcm-sec.com/p/practical-malware-analysis-triage)
 
