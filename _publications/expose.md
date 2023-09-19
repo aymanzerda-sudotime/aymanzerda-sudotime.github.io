@@ -2,7 +2,7 @@
 title: "Academy"
 collection: publications
 permalink: /publication/academy
-excerpt: 'This is a retired machine from HackTheBox'
+excerpt: 'This is a subscriber only room from TryHackMe'
 date: 2023-09-19
 venue: '09-19'
 #paperurl: 'http://academicpages.github.io/files/paper1.pdf'
