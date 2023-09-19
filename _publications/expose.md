@@ -1,7 +1,7 @@
 ---
-title: "Academy"
+title: "Expose"
 collection: publications
-permalink: /publication/academy
+permalink: /publication/expose
 excerpt: 'This is a subscriber only room from TryHackMe'
 date: 2023-09-19
 venue: '09-19'
