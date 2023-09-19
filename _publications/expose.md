@@ -11,7 +11,7 @@ venue: '09-19'
 
 ![header](/images/expose-header.png)
 
-**LINK:** [Academy](https://tryhackme.com/room/expose)
+**LINK:** [Expose](https://tryhackme.com/room/expose)
 
 ---
 
