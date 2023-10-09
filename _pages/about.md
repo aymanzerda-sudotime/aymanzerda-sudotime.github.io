@@ -14,8 +14,9 @@ redirect_from:
 * I enjoy problem solving and always learning using some cybersecurity plateforms such as **TryHackMe**,**HackTheBox**,**Cybertalents**,**PicoCTF**.
 
 <script src="https://tryhackme.com/badge/710464"></script>
->
+
 > ### Tryhackme Paths :
+>* [Security Engineer](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-YCESNZD6OJ.png)
 >* [Cyber Defense](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IMJWWN5Z9S.png)
 >* [SOC Level 1](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-IHQOABLZ6E.png)
 >* [Jr Penetration Tester](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-9AVCHFIMUT.png)
@@ -24,6 +25,7 @@ redirect_from:
 >* [Web Fundamentals](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HRV8T0BJFH.png)
 
 > ### Certifications :
+>* [eJPTv2](https://certs.ine.com/9e5ac66e-7b62-478e-bdcf-e32b3116ac50)
 >* [Security Certified Network Specialist (SCNS)](https://ondemand.icsiglobal.com/certificates/g0iq7bhrxo)
 >* [Practical Ethical Hacking](https://github.com/aymanzerda-sudotime/TCM/blob/main/certificate-of-completion-for-practical-ethical-hacking-the-complete-course.pdf)
 >* [Windows Privilege Escalation for Beginners](https://github.com/aymanzerda-sudotime/TCM/blob/main/certificate-of-completion-for-windows-privilege-escalation-for-beginners.pdf)
