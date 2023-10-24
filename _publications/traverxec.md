@@ -1,5 +1,5 @@
 ---
-title: "Traverxec"
+title: "Traverxec | HackTheBox"
 collection: publications
 permalink: /publication/traverxec
 excerpt: 'This is a retired machine from HackTheBox'

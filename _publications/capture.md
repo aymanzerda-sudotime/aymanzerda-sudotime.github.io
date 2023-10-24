@@ -1,5 +1,5 @@
 ---
-title: "Capture - TryHackMe"
+title: "Capture | TryHackMe"
 collection: publications
 permalink: /publication/capture
 excerpt: 'This is a free machine from TryHackMe'
