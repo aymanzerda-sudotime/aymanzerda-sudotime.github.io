@@ -1,5 +1,5 @@
 ---
-title: "Timelapse | HackTheBox"
+title: "HackTheBox: Timelapse"
 collection: publications
 permalink: /publication/timelapse
 excerpt: 'This is a retired machine from HackTheBox'

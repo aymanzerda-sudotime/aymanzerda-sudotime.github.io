@@ -1,5 +1,5 @@
 ---
-title: "Vulnnet | TryHackMe"
+title: "TryHackMe: Vulnnet"
 collection: publications
 permalink: /publication/Vulnnet
 excerpt: 'This is a free machine from TryHackMe'

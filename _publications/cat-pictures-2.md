@@ -1,5 +1,5 @@
 ---
-title: "Cat Pictures 2 | TryHackMe"
+title: "TryHackMe: Cat Pictures 2"
 collection: publications
 permalink: /publication/cat-pictures-2
 excerpt: 'This is a free room from TryHackMe'

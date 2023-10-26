@@ -1,5 +1,5 @@
 ---
-title: "Academy | Hackthebox "
+title: "HackTheBox: Academy"
 collection: publications
 permalink: /publication/academy
 excerpt: 'This is a retired machine from HackTheBox'

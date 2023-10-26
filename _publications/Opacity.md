@@ -1,5 +1,5 @@
 ---
-title: "Opacity TryHackMe"
+title: "TryHackMe: Opacity"
 collection: publications
 permalink: /publication/Opacity
 excerpt: 'This is a free machine from TryHackMe'

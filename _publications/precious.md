@@ -1,5 +1,5 @@
 ---
-title: "Precious HackTheBox"
+title: "HackTheBox: Precious"
 collection: publications
 permalink: /publication/precious
 excerpt: 'This is a free machine from HackTheBox'

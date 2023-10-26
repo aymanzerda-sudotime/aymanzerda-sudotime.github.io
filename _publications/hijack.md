@@ -1,5 +1,5 @@
 ---
-title: Hijack | TryHackMe
+title: 'Tryhackme : Hijack'
 collection: publications
 permalink: /publication/hijack
 excerpt: 'This is a free room from TryHackMe'

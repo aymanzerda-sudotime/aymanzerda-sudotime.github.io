@@ -1,5 +1,5 @@
 ---
-title: "Res"
+title: "TryHackMe: Res"
 collection: publications
 permalink: /publication/RES
 excerpt: 'This is a subscriber only room from Tryhackme'
