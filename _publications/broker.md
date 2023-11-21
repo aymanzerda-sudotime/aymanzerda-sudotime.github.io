@@ -36,7 +36,7 @@ PORT      STATE SERVICE
 61614/tcp open  unknown
 61616/tcp open  unknown
 ```
-* Full Scna : 
+* Full Scan : 
 
 ```bash
 nmap -p 22,80,1883,5672,8161,39751,61613,61614,61616 -sCV 10.10.11.243
@@ -97,7 +97,7 @@ PORT      STATE SERVICE    VERSION
 
 * The scan reveals 9 open ports : 
     * ``OpenSSH`` server running on port 22.
-    * ``nginx`` web server running on port 80 but it's returing a 401 unauthorized access.
+    * ``nginx`` web server running on port 80 but it's returning a 401 unauthorized access.
     * ``ActiveMQ`` is a messaging broker running on ports ``61613`` and ``61616``, These ports are associated with the AMQP (Advanced Message Queuing Protocol) and MQTT (Message Queuing Telemetry Transport) communication protocols, respectively running on port ``1883`` and ``5672``.
 
 * Visiting ``http://10.10.11.243``, we have a basic HTTP authentication.
@@ -118,7 +118,7 @@ PORT      STATE SERVICE    VERSION
 
 * For more information about this specific vulnerability, please refer to the provided links below.
 
-    - [CVE-2023-46604 | AttackerKB](https://attackerkb.com/topics/IHsgZDE3tS/cve-2023-46604/rapid7-analysis?referrer=etrblog)
+    - [CVE-2023-46604 from AttackerKB](https://attackerkb.com/topics/IHsgZDE3tS/cve-2023-46604/rapid7-analysis?referrer=etrblog)
 
     - [Huntress](https://www.huntress.com/blog/critical-vulnerability-exploitation-of-apache-activemq-cve-2023-46604)
 
