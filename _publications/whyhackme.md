@@ -79,7 +79,7 @@ gobuster dir -u http://<target-ip>/ -w /usr/share/Seclists/Discovery/Web-Content
 
 ![whyhackme5](/images/whyhackme5.png)
 
-* Gobuster results uncovered a ``registration.php`` page, allowing the creation of a new account.
+* Gobuster results uncovered a ``register.php`` page, allowing the creation of a new account.
 
 ![whyhackme6](/images/whyhackme6.png)
 
@@ -221,7 +221,7 @@ python3 -m http.server 8000
 
 ![whyhackme15](/images/whyhackme15.png)
 
-* Further investigation led to the discovery of a pcap file and an urgent.txt file in the /opt directory. 
+* Further investigation led to the discovery of a pcap file and an urgent.txt file in the ``/opt`` directory. 
 
 ![whyhackme16](/images/whyhackme16.png)
 
