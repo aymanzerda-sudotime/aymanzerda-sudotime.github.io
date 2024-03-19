@@ -67,7 +67,7 @@ PORT     STATE SERVICE       VERSION
 |_ssl-date: 2024-03-18T14:20:06+00:00; 0s from scanner time.
 ```
 
-- The scan revealed that the system was a Windows machine, and we found 5 open ports.
+- The scan revealed that our target is a Windows machine, and we found 5 open ports.
 - We also discovered that ``FTP`` anonymous login was enabled but didn't find anything useful in the files.
 - Moving on, we checked the website running on port 80, which turned out to be ``IIS 10.0``. However, our attempts to find interesting files or directories were unsuccessful.
 
@@ -81,21 +81,21 @@ PORT     STATE SERVICE       VERSION
 
 ## User Flag : 
 
-- based on the title of the webserver on port 80 it's hacksmartersec so i assumed that the ``web.config`` file is located at `` C:\inetpub\wwwroot\hacksmartersec\web.config``.
+- based on the title of the webserver on port 80 which is hacksmartersec, i assumed that the ``web.config`` file is located at `` C:\inetpub\wwwroot\hacksmartersec\web.config``.
 
 ![hacksmartersec2](/images/hacksmartersec2.png)
 
-- Bingoo. now we have the credentials so our next step is to login via ssh and get the user flag.
+- Bingoo. Now we have the credentials so our next step is to login via ssh and get the user flag.
 
 ![hacksmartersec3](/images/hackersmartsec3.png)
 
 ## Root Flag : 
 
-- For the privilege escalation part, i used ``winPEAS`` but the antivirus picked it up. So, i switched to ``PrivescCheck.ps1`` instead. I found that the ``spoofer-scheduler`` service's binary was running with a lot of permissions as LocalSystem.
+- For the privilege escalation part, i used ``winPEAS`` but the antivirus picked it up. So, i switched to [``PrivescCheck.ps1``](https://raw.githubusercontent.com/itm4n/PrivescCheck/master/PrivescCheck.ps1) instead. I found that the ``spoofer-scheduler`` service's binary was running with a lot of permissions as LocalSystem.
 
 ![hacksmartersec4](/images/hacksmartersec4.png)
 
-- The plan now is to stop the ``spoofer-scheduler`` service. Then, we put our own sneaky code into its binary to get a shell back. Then restart the service and get a super-powered shell as SYSTEM.
+- The plan now is to stop the ``spoofer-scheduler`` service. Then, we compile a reverse shell to an exe with same name used for the service's binary. Then restart the service and get a super-powered shell as SYSTEM.
 
 - Stopping the ``spoofer-scheduler`` service . 
 
