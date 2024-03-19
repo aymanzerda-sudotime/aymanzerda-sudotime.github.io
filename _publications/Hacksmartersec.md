@@ -93,9 +93,14 @@ PORT     STATE SERVICE       VERSION
 
 - For the privilege escalation part, i used ``winPEAS`` but the antivirus picked it up. So, i switched to [``PrivescCheck.ps1``](https://raw.githubusercontent.com/itm4n/PrivescCheck/master/PrivescCheck.ps1) instead. I found that the ``spoofer-scheduler`` service's binary was running with a lot of permissions as LocalSystem.
 
+```
+# Running PrivescCheck 
+
+powershell -ep bypass -c ". .\PrivescCheck.ps1; Invoke-PrivescCheck -Extended"
+```
 ![hacksmartersec4](/images/hacksmartersec4.png)
 
-- The plan now is to stop the ``spoofer-scheduler`` service. Then, we compile a reverse shell to an exe with same name used for the service's binary. Then restart the service and get a super-powered shell as SYSTEM.
+- The plan now is to stop the ``spoofer-scheduler`` service. Then, we compile a reverse shell to an exe with same name used for the service's binary, overwrite the service binary with our reverse shell, and finally start the service and get a super-powered shell as SYSTEM.
 
 - Stopping the ``spoofer-scheduler`` service . 
 
